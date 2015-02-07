@@ -3238,74 +3238,74 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
 		},
-	"\/build\/css\/styles.css": {
+	"\/css\/styles.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/build\/css\/styles.css",
+		"inputAbbreviatedPath": "\/css\/styles.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/build\/images\/london-1.jpg": {
+	"\/images\/london-1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 653240,
-		"inputAbbreviatedPath": "\/build\/images\/london-1.jpg",
-		"outputAbbreviatedPath": "\/build\/images\/london-1.jpg",
+		"inputAbbreviatedPath": "\/images\/london-1.jpg",
+		"outputAbbreviatedPath": "\/images\/london-1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/build\/images\/london-2.jpg": {
+	"\/images\/london-2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 635562,
-		"inputAbbreviatedPath": "\/build\/images\/london-2.jpg",
-		"outputAbbreviatedPath": "\/build\/images\/london-2.jpg",
+		"inputAbbreviatedPath": "\/images\/london-2.jpg",
+		"outputAbbreviatedPath": "\/images\/london-2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/build\/images\/london-3.jpg": {
+	"\/images\/london-3.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 375087,
-		"inputAbbreviatedPath": "\/build\/images\/london-3.jpg",
-		"outputAbbreviatedPath": "\/build\/images\/london-3.jpg",
+		"inputAbbreviatedPath": "\/images\/london-3.jpg",
+		"outputAbbreviatedPath": "\/images\/london-3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/build\/images\/profile.jpg": {
+	"\/images\/profile.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 777561,
-		"inputAbbreviatedPath": "\/build\/images\/profile.jpg",
-		"outputAbbreviatedPath": "\/build\/images\/profile.jpg",
+		"inputAbbreviatedPath": "\/images\/profile.jpg",
+		"outputAbbreviatedPath": "\/images\/profile.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/build\/index.html": {
+	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/build\/index.html",
+		"inputAbbreviatedPath": "\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/build\/js\/script-min.js": {
+	"\/js\/script-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/build\/js\/script-min.js",
-		"outputAbbreviatedPath": "\/build\/js\/min\/script-min-min.js",
+		"inputAbbreviatedPath": "\/js\/script-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/script-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -3383,7 +3383,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/js\/script.js",
-		"outputAbbreviatedPath": "\/build\/js\/script-min.js",
+		"outputAbbreviatedPath": "\/js\/script-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 2,
@@ -3421,7 +3421,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/kit\/index.kit",
-		"outputAbbreviatedPath": "\/build\/index.html",
+		"outputAbbreviatedPath": "\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1
 		},
@@ -3447,14 +3447,14 @@
 		},
 	"\/source\/less\/styles.less": {
 		"allowInsecureImports": 0,
-		"createSourceMap": 1,
+		"createSourceMap": 0,
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/less\/styles.less",
-		"outputAbbreviatedPath": "\/build\/css\/styles.css",
+		"outputAbbreviatedPath": "\/css\/styles.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 2,
