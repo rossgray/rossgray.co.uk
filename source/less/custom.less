@@ -1,0 +1,342 @@
+// @font-family-sans-serif: 'Raleway', Helvetica, Arial, sans-serif;
+@font-family-sans-serif: 'Josefin Sans', Helvetica, Arial, sans-serif;
+@headings-font-family: 'PT Sans Caption', sans-serif;
+@font-size-base: 20px;
+@media (max-width: @screen-xs-max) {
+	@font-size-base: 18px;
+	body {
+		font-size: @font-size-base;
+	}
+	h1 {
+		font-size: floor((@font-size-base * 2.6)); // ~36px
+	}
+	h2 {
+		font-size: floor((@font-size-base * 2.15)); // ~30px
+	}
+	h3 {
+		font-size: ceil((@font-size-base * 1.7)); // ~24px
+	}
+	h4 {
+		font-size: ceil((@font-size-base * 1.25)); // ~18px
+	}
+	h5 {
+		font-size: @font-size-base;
+	}
+	h6 {
+		font-size: ceil((@font-size-base * 0.85)); // ~12px 
+	}           
+}
+
+@headingColour: @brand-danger;
+@greyBackground: #EAEAEA;
+@blue-colour: #467CE0;
+
+
+
+body { 
+	// To prevent content hiding under navbar
+	padding-top: @navbar-height;
+	// Needed for scrollspy plugin
+	position: relative;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: bold;
+}
+
+// h5 {
+// 	font-size: 1em;
+// }
+
+.btn-round {
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	border: 2px solid #ffffff;
+	border-radius: 30px;
+}
+.btn.btn-link {
+	color: @blue-colour;
+	&:hover {
+		text-decoration: none;
+		color: darken(@blue-colour, 20%);
+	}
+	&:focus {
+		outline: none;
+		text-decoration: none;
+	}
+}
+.btn-primary {
+	.button-variant(@btn-primary-color; @blue-colour; darken(@blue-colour, 5%));
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.progress-bar-info {
+	background-color: @blue-colour;
+}
+
+#intro-carousel {
+	position: relative;
+	margin-top: -@navbar-height;
+	padding-top: @navbar-height;
+	height: 800px;
+	height: 100vh;
+	background-image: url(../images/london-1.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	transition: background-image 1s linear;
+
+	header {
+		position: absolute;
+		top: 50%;
+		margin-top: -143px;
+		text-align: center;
+		width: 100%;
+		z-index: 1000;
+		color: #ffffff;
+
+		@media (max-width: @screen-xs-max) {
+			margin-top: -190px;
+		}
+
+		h2 {
+			font-size: 1.8em;
+			// font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		h1, h2, h5 {
+			text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+		}
+	}
+
+	.contact {
+		margin-top: 1.5em;
+		.btn {
+			transition-duration: 1s;
+			transition-property: transform;
+			margin: 0 1em;
+			.fa {
+				margin-top: 13px;
+				color: #ffffff;
+			}
+			&:hover {
+				transform: rotate(360deg);
+				background-color: #ffffff;
+			}
+			&.btn-linkedin {
+				font-size: 1.1em;
+				&:hover .fa {
+					color: #0077b5;
+				}
+			}
+			&.btn-email:hover .fa {
+				color: #D6412B;
+			}
+			&.btn-github {
+				font-size: 1.2em;
+				.fa {
+					margin-top: 11px;
+				}
+				&:hover .fa {
+					color: #000000;
+				}
+			}
+		}
+	}
+	.scroll {
+		position: absolute;
+		width: 72px;
+		bottom: 50px;
+		right: 50%;
+		margin-right: -36px;
+		text-align: center;
+		color: #ffffff;
+		i {
+			animation-duration: 3s;
+		}
+		&:hover {
+			color: darken(#ffffff, 10%);
+		} 
+	}
+}
+
+.cv-section {
+
+	padding: 3em 0;
+	@media (max-width: @screen-xs-max) {
+		padding: 1em 0;
+	}
+
+	.heading {
+		margin-bottom: 1em;
+	}
+	h2 {
+		color: @headingColour;
+	}
+
+	.sub-heading h4 {
+		text-transform: uppercase;
+	}
+}
+
+.cv-section:nth-child(odd) {
+	background-color: @greyBackground;
+}
+
+
+// Sections
+
+#about-me img {
+	margin-bottom: 1em;
+}
+
+#skills {
+	.progress {
+		height: 24px;
+	}
+}
+
+// shared betweem education & employment
+#education, #employment {
+	h3, h4 {
+		margin-top: 0;
+		word-break: break-word;
+		.loc {
+			margin-left: 0.5em;
+		}
+	}
+	.more-info {
+		display: none;
+		margin-bottom: 25px;
+	}
+	.read-more {
+		.less {
+			display: none;
+		}
+		&.active {
+			.less {
+				display: inline-block;
+			}
+			.more {
+				display: none;
+			}
+		}
+	}
+
+	@media (max-width: @screen-xs-max) {
+		h3, h4 {
+			font-size: ceil((@font-size-base * 1.25)); // ~18px
+			.loc {
+				margin: 5px 0;
+				display: block;
+			}
+		}
+	}
+}
+
+#education {
+	h5 {
+		margin-top: 1.5em;
+	}
+	.show-modules {
+		margin-top: -10px;
+
+		i {
+			margin-right: 1em;
+		}
+		.less {
+			display: none;
+		}
+		&.active {
+			.less {
+				display: inline-block;
+			}
+			.more {
+				display: none;
+			}
+		}
+	}
+
+	.modules {
+		display: none;
+		margin: 20px auto;
+
+		.module {
+			// display: table;
+			display: flex;
+			align-items: center;
+			padding: 0.6em 0.7em 0.4em 0.7em;
+			min-height: 3.4em;
+			// width: 100%;
+			text-align: center;
+			border-radius: 4px;
+			border: 1px solid @text-color;
+			margin-bottom: 15px;
+		
+			span {
+				display: block;
+				text-align: center;
+				width: 100%;
+				word-break: break-word;
+				// vertical-align: middle;
+				
+				// font-size: 14px;
+				// font-weight: 700;
+				line-height: 1.2;
+
+				// min-height: 3.4em;
+			}
+		}
+
+		@media (max-width: @screen-xs-max) {
+			margin-left: -5px;
+			margin-right: -5px;
+			
+			> div {
+				padding: 0 5px;
+			}
+			.module {
+				padding: 0.4em 0.3em 0.2em 0.3em;
+			}
+		}
+	}
+
+}
+
+#employment {
+	.cd-timeline-content {
+		background-color: @greyBackground;
+	}
+	.cd-timeline-content:before {
+		border-right-color: @greyBackground;
+	}
+	h3 {
+		margin-bottom: 0;
+	}
+	.company-desc {
+		margin-bottom: 0.3em;
+	}
+	.position {
+		margin-top: 0;
+	}
+
+	.job-bullets {
+		margin-top: 1em;
+		li {
+			margin-bottom: 0.5em;
+		}
+	}
+}
