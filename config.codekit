@@ -3247,44 +3247,77 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/london-1-small.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 102886,
+		"inputAbbreviatedPath": "\/images\/london-1-small.jpg",
+		"outputAbbreviatedPath": "\/images\/london-1-small.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/london-1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 653240,
+		"initialSize": 699191,
 		"inputAbbreviatedPath": "\/images\/london-1.jpg",
 		"outputAbbreviatedPath": "\/images\/london-1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
+		},
+	"\/images\/london-2-small.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 106494,
+		"inputAbbreviatedPath": "\/images\/london-2-small.jpg",
+		"outputAbbreviatedPath": "\/images\/london-2-small.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/images\/london-2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 635562,
+		"initialSize": 503126,
 		"inputAbbreviatedPath": "\/images\/london-2.jpg",
 		"outputAbbreviatedPath": "\/images\/london-2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
+		},
+	"\/images\/london-3-small.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 67371,
+		"inputAbbreviatedPath": "\/images\/london-3-small.jpg",
+		"outputAbbreviatedPath": "\/images\/london-3-small.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/images\/london-3.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 375087,
+		"initialSize": 263782,
 		"inputAbbreviatedPath": "\/images\/london-3.jpg",
 		"outputAbbreviatedPath": "\/images\/london-3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/images\/profile.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 777561,
+		"initialSize": 129560,
 		"inputAbbreviatedPath": "\/images\/profile.jpg",
 		"outputAbbreviatedPath": "\/images\/profile.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -3348,7 +3381,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 545806,
+		"initialSize": 777561,
 		"inputAbbreviatedPath": "\/original_images\/profile.jpg",
 		"outputAbbreviatedPath": "\/original_images\/profile.jpg",
 		"outputPathIsOutsideProject": 0,

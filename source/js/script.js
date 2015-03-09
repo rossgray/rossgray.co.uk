@@ -4,16 +4,27 @@
 $(document).ready(function() {
 
 	// Background cover images
-	var backgroundImages = [
+
+	var smallDeviceWidth = 768;
+
+	var backgroundImagesLarge = [
 		'images/london-1.jpg',
 		'images/london-2.jpg',
 		'images/london-3.jpg'
 	];
+	var backgroundImagesSmall = [
+		'images/london-1-small.jpg',
+		'images/london-2-small.jpg',
+		'images/london-3-small.jpg'
+	];
+
+	var backgroundImages = ($(window).width() >= smallDeviceWidth) ? backgroundImagesLarge : backgroundImagesSmall;
+
 	var imgNum = 1;
 	setInterval(function() {
 		$('#intro-carousel').css('background-image', 'url(' + backgroundImages[imgNum] + ')');
-		imgNum = (imgNum + 1) % 3;
-	}, 3000);
+		imgNum = (imgNum + 1) % backgroundImages.length;
+	}, 5000);
 
 	// add email address
 	$("#email").each( function() {
