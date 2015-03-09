@@ -3251,7 +3251,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 102886,
+		"initialSize": 251824,
 		"inputAbbreviatedPath": "\/images\/london-1-small.jpg",
 		"outputAbbreviatedPath": "\/images\/london-1-small.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -3273,7 +3273,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 106494,
+		"initialSize": 279179,
 		"inputAbbreviatedPath": "\/images\/london-2-small.jpg",
 		"outputAbbreviatedPath": "\/images\/london-2-small.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -3287,17 +3287,6 @@
 		"initialSize": 503126,
 		"inputAbbreviatedPath": "\/images\/london-2.jpg",
 		"outputAbbreviatedPath": "\/images\/london-2.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/london-3-small.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 67371,
-		"inputAbbreviatedPath": "\/images\/london-3-small.jpg",
-		"outputAbbreviatedPath": "\/images\/london-3-small.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -3343,39 +3332,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
-		},
-	"\/original_images\/london-1.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 699191,
-		"inputAbbreviatedPath": "\/original_images\/london-1.jpg",
-		"outputAbbreviatedPath": "\/original_images\/london-1.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/original_images\/london-2.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 635562,
-		"inputAbbreviatedPath": "\/original_images\/london-2.jpg",
-		"outputAbbreviatedPath": "\/original_images\/london-2.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/original_images\/london-3.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.944e+06,
-		"inputAbbreviatedPath": "\/original_images\/london-3.jpg",
-		"outputAbbreviatedPath": "\/original_images\/london-3.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		},
 	"\/original_images\/profile.jpg": {
 		"fileType": 16384,
