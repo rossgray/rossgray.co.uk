@@ -1,0 +1,156 @@
+body {
+  color: $fg-color;
+  background-color: $bg-color;
+  font-family: 'Fira Mono', monospace;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+}
+
+a {
+  font-weight: 700;
+  color: $alt-fg-color;
+  text-decoration: none;
+/*   &:focus,
+  &:hover {
+    text-decoration: underline;
+  } */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $alt-fg-color;
+  text-transform: uppercase;
+/*   letter-spacing: 0.0625em;
+  margin: 3.2rem 0 1.6rem 0; */
+}
+
+h1 {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+}
+h2 {
+  font-size: 2.0rem;
+  line-height: 2.0rem;
+}
+h3 {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+h4 {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+h5 {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+h6 {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+
+pre {
+  overflow-x: auto;
+}
+
+code {
+  display: inline-block;
+  background-color: $alt-fg-color;
+  color: $bg-color;
+}
+
+blockquote {
+  border-left: 2px solid $alt-bg-color;
+  padding-left: 1.6rem;
+  font-style: italic;
+}
+
+th, td {
+  padding: 1.6rem;
+}
+table {
+  border-collapse: collapse;
+}
+table td, table th {
+  border: 2px solid $alt-fg-color;
+}
+table tr:first-child th {
+  border-top: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table tr td:first-child,
+table tr th:first-child {
+  border-left: 0;
+}
+table tr td:last-child,
+table tr th:last-child {
+  border-right: 0;
+}
+
+button {
+  padding: .25rem .75rem;
+  border: 1px solid $fg-color;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.bg-primary {
+  background-color: $primary-color !important;
+}
+.text-white {
+  color: $white !important;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: auto;
+}
+.content {
+  margin-top: 64px;
+}
+.footer {
+}
+
+@media (min-width : $breakpoint-lg) {
+  body {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 17rem 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "left-nav content"
+      "left-nav footer";
+  }
+  .nav {
+    position: static;
+    grid-area: left-nav;
+/*     bottom: 0;
+    right: auto;
+    width: 17rem; */
+  }
+  .content {
+    grid-area: content;
+    margin-top: 0;
+    // margin-left: 17rem;
+  }
+  .footer {
+    // margin-left: 17rem;
+    grid-area: footer;
+    grid-column-start: 2;
+  }
+}

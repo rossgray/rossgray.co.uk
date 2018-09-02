@@ -1,0 +1,19 @@
+<nav class="nav bg-primary">
+  <div class="profile">
+    {{ with .Site.Params.avatarurl }}
+      <div class="avatar d-lg-block"><img src="{{.}}" alt="avatar"></div>
+    {{ end }}
+    <a class="nav-title text-white d-lg-none" href="{{ .Site.BaseURL | absLangURL }}">
+      {{ .Site.Title }}
+    </a>
+  </div>
+  <button id="nav-button" class="nav-button d-lg-none text-white" aria-controls="nav-list" aria-expanded="false"><i class="fas fa-bars"></i></button>
+  <ul id="nav-list" class="list-unstyled">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+      <li class="nav-item">
+        <a class="{{ if $currentPage.IsMenuCurrent "main" . }}active {{ end }}nav-link text-white" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</nav>
