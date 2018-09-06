@@ -1,11 +1,18 @@
+*,
+*:after,
+*:before {
+	box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
   color: $fg-color;
   background-color: $bg-color;
   font-family: 'Fira Mono', monospace;
   min-height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  align-items: center;
 }
 
 a {
@@ -130,30 +137,19 @@ img {
 }
 
 @media (min-width : $breakpoint-lg) {
-  body {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 17rem 1fr;
-    grid-template-rows: 1fr auto;
-    grid-template-areas:
-      "left-nav content"
-      "left-nav footer";
-  }
   .nav {
-    position: static;
-    grid-area: left-nav;
-/*     bottom: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
     right: auto;
-    width: 17rem; */
+    width: 17rem;
   }
   .content {
-    grid-area: content;
     margin-top: 0;
-    // margin-left: 17rem;
+    margin-left: 17rem;
   }
   .footer {
-    // margin-left: 17rem;
-    grid-area: footer;
-    grid-column-start: 2;
+    margin-left: 17rem;
   }
 }
