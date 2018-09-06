@@ -24,19 +24,19 @@ h3,
 h4,
 h5,
 h6 {
-  color: $alt-fg-color;
+  color: $fg-color;
   text-transform: uppercase;
 /*   letter-spacing: 0.0625em;
   margin: 3.2rem 0 1.6rem 0; */
 }
 
 h1 {
-  font-size: 2.4rem;
-  line-height: 2.4rem;
+  font-size: 2.8rem;
+  line-height: 2.8rem;
 }
 h2 {
-  font-size: 2.0rem;
-  line-height: 2.0rem;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
 }
 h3 {
   font-size: 1.8rem;
@@ -111,6 +111,9 @@ img {
 }
 .text-white {
   color: $white !important;
+}
+.text-primary {
+  color: $primary-color !important;
 }
 
 .nav {

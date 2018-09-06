@@ -1,0 +1,23 @@
+{{ define "title" }}
+  {{ .Title }} · {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+
+<div class="page">
+    <header>
+      <h1>{{ .Title }}</h1>
+    </header>
+
+    <section>
+        <h2>Experience</h2>
+        <hr>
+
+        {{ range sort $.Site.Data.cv.experience "weight" }}
+
+            {{ partial "cv/experience.html" . }}
+
+        {{ end }}
+    </section>
+</div>
+
+{{ end }}

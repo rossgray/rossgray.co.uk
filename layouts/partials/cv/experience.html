@@ -1,0 +1,18 @@
+<div class="cv-element">
+    <div class="heading">
+        <h3>
+            <span class="company text-primary">{{ $.company }}</span>
+            {{ if $.location }}
+                <span class="location">{{ $.location }}</span>
+            {{ end }}
+            <br>
+            <span class="position">{{ $.position }}</span>
+        </h3>
+        <p class="dates">
+            {{ $.start_date }} - {{ $.end_date | default "Present" }}
+        </p>
+    </div>
+    <div class="desc">
+        {{ $.description | markdownify }}
+    </div>
+</div>

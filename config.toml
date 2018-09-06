@@ -50,9 +50,3 @@ pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences wi
     icon = "fab fa-linkedin fa-2x"
     weight = 4
     url = "https://www.linkedin.com/in/rossgray1/"
-
-# Menu links
-[[menu.main]]
-    name = "CV/Resumé"
-    weight = 1
-    url  = "/cv/"

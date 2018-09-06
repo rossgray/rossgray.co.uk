@@ -1,8 +1,6 @@
 <nav class="nav bg-primary">
   <div class="profile">
-    {{ with .Site.Params.avatarurl }}
-      <div class="avatar d-lg-block"><img src="{{.}}" alt="avatar"></div>
-    {{ end }}
+    <a class="avatar d-lg-block" href="{{ .Site.BaseURL | absLangURL }}"><img src="{{ .Site.Params.avatarurl }}" alt="avatar"></a>
     <a class="nav-title text-white d-lg-none" href="{{ .Site.BaseURL | absLangURL }}">
       {{ .Site.Title }}
     </a>
