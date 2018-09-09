@@ -17,6 +17,7 @@ body {
   display: grid;
   grid-template-rows: 1fr auto;
   align-items: center;
+  line-height: 1.2;
 }
 
 a {
@@ -43,50 +44,50 @@ h6 {
 
 h1 {
   font-size: 2.2rem;
-  line-height: 2.2rem;
+  // line-height: 2.2rem;
   @media (min-width : $breakpoint-lg) {
     font-size: 2.8rem;
-    line-height: 2.8rem;
+    // line-height: 2.8rem;
   }
 }
 h2 {
   font-size: 1.8rem;
-  line-height: 1.8rem;
+  // line-height: 1.8rem;
   @media (min-width : $breakpoint-lg) {
     font-size: 2.2rem;
-    line-height: 2.2rem;
+    // line-height: 2.2rem;
   }
 }
 h3 {
   font-size: 1.5rem;
-  line-height: 1.5rem;
+  // line-height: 1.5rem;
   @media (min-width : $breakpoint-lg) {
     font-size: 1.8rem;
-    line-height: 1.8rem;
+    // line-height: 1.8rem;
   }
 }
 h4 {
   font-size: 1.4rem;
-  line-height: 1.4rem;
+  // line-height: 1.4rem;
   @media (min-width : $breakpoint-lg) {
     font-size: 1.6rem;
-    line-height: 1.6rem;
+    // line-height: 1.6rem;
   }
 }
 h5 {
   font-size: 1.2rem;
-  line-height: 1.2rem;
+  // line-height: 1.2rem;
   @media (min-width : $breakpoint-lg) {
     font-size: 1.4rem;
-    line-height: 1.4rem;
+    // line-height: 1.4rem;
   }
 }
 h6 {
   font-size: 1.0rem;
-  line-height: 1.0rem;
+  // line-height: 1.0rem;
   @media (min-width : $breakpoint-lg) {
     font-size: 1.2rem;
-    line-height: 1.2rem;
+    // line-height: 1.2rem;
   }
 }
 
@@ -95,6 +96,9 @@ ul {
   @media (min-width : $breakpoint-lg) {
     padding-left: 2.5rem;
   }
+}
+li {
+  margin-bottom: 0.5rem;
 }
 
 pre {

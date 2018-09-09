@@ -1,7 +1,6 @@
 insitution = "University of Cambridge"
 course = "Information & Computer Engineering (MEng)"
-start_date = "Oct 2005"
-end_date = "Jun 2009"
+dates = "Oct 2005 - Jun 2009"
 location = "Trinity College"
 description = """
 #### 4th year - Honours pass with Merit

@@ -7,9 +7,7 @@
             {{ end }}
             <span class="position">{{ $.course }}</span>
         </h3>
-        <p class="dates text-primary">
-            {{ $.start_date }} - {{ $.end_date | default "Present" }}
-        </p>
+        <p class="dates text-primary">{{ $.dates }}</p>
     </div>
     <div class="desc">
         {{ $.description | markdownify }}

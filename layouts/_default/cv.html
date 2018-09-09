@@ -29,6 +29,41 @@
 
         {{ end }}
     </section>
+
+    <section>
+        <h2>Skills</h2>
+        <hr>
+
+        {{ range $.Site.Data.cv.skills.skill_type }}
+
+            {{ partial "cv/skill.html" . }}
+
+        {{ end }}
+    </section>
+
+    <section>
+        <h2>Other Experience</h2>
+        <hr>
+
+        {{ range sort $.Site.Data.cv.other_experience "weight" }}
+
+            {{ partial "cv/experience.html" . }}
+
+        {{ end }}
+    </section>
+
+    <section>
+        <h2>Interests</h2>
+        <hr>
+
+        <ul>
+        {{ range $.Site.Data.cv.interests.interests }}
+
+            <li>{{ . | markdownify }}</li>
+
+        {{ end }}
+        </ul>
+    </section>
 </div>
 
 {{ end }}
