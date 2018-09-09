@@ -1,11 +1,11 @@
 <div class="cv-element">
     <div class="heading">
         <h3>
-            <span class="company text-primary">{{ $.company }}</span>
+            <span class="company text-primary">{{ $.insitution }}</span>
             {{ if $.location }}
                 <span class="location">{{ $.location }}</span>
             {{ end }}
-            <span class="position">{{ $.position }}</span>
+            <span class="position">{{ $.course }}</span>
         </h3>
         <p class="dates text-primary">
             {{ $.start_date }} - {{ $.end_date | default "Present" }}

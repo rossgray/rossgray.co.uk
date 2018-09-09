@@ -1,34 +1,72 @@
 section > h2 {
-    margin-top: 4rem;
+    margin-top: 3rem;
     margin-bottom: 0;
 }
 .cv-element {
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     .heading {
-        display: flex;
-        justify-content: space-between;
         h3 {
-            margin-top: 0;
-            margin-bottom: 0.5rem;
+            margin: 0;
         }
         .position {
             // color: $grey;
+            display: block;
             font-weight: normal;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
         .location {
             font-weight: normal;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             color: $grey;
-            margin-left: 0.5rem;
+            display: block;
         }
         .dates {
             margin-top: 0;
         }
     }
     .desc {
+        margin: 1rem auto;
         li {
             margin-bottom: 0.5rem;
+        }
+        h4 {
+            text-transform: none;
+            font-size: 1.0rem;
+            // font-weight: normal;
+            margin-top: 1rem;
+            margin-bottom: 0.2rem;
+        }
+        p {
+            margin-top: 0.2rem;
+        }
+    }
+}
+@media (min-width : $breakpoint-lg) {
+    section > h2 {
+        margin-top: 4rem;
+    }
+    .cv-element {
+        margin-top: 3rem;
+        .heading {
+            display: flex;
+            justify-content: space-between;
+            h3 {
+                margin-bottom: 0.5rem;
+            }
+            .company {
+                margin-right: 0.5rem;
+            }
+            .position {
+                font-size: 1.4rem;
+            }
+            .location {
+                font-size: 1.4rem;
+                display: inline;
+            }
+            .dates {
+                margin-left: 0.5rem;
+                text-align: right;
+            }
         }
     }
 }

@@ -14,5 +14,8 @@
 }
 
 .container {
+  padding: 1rem;
+  @media (min-width : $breakpoint-lg) {
     padding: 2rem;
+  }
 }
