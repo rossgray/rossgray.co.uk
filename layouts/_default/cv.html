@@ -52,14 +52,14 @@
         {{ end }}
     </section>
 
-    <section>
+    <section class="interests">
         <h2>Interests</h2>
         <hr>
 
-        <ul>
-        {{ range $.Site.Data.cv.interests.interests }}
+        <ul class="list-unstyled">
+        {{ range $.Site.Data.cv.interests.interest }}
 
-            <li>{{ . | markdownify }}</li>
+            <li><i class="{{ .icon }}"></i>{{ .desc | markdownify }}</li>
 
         {{ end }}
         </ul>
