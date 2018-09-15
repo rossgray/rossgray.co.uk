@@ -20,7 +20,7 @@ pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences wi
     keywords = "blog,developer,personal" # Site keywords.
     avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
 
-    # footercontent = "Enter a text here." # Add footer content
+    # footercontent = "Enter some text here." # Add footer content
 
     # Whether you want to hide copyright and credits in the footer.
     hideCredits = false
