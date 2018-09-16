@@ -1,7 +1,7 @@
 <nav class="nav bg-primary">
   <div class="profile">
-    <a class="avatar d-lg-block" href="{{ .Site.BaseURL | absLangURL }}"><img src="{{ .Site.Params.avatarurl }}" alt="avatar"></a>
-    <a class="nav-title text-white d-lg-none" href="{{ .Site.BaseURL | absLangURL }}">
+    <a class="avatar d-lg-block" href="{{ .Site.BaseURL | relLangURL }}"><img src="{{ .Site.Params.avatarurl }}" alt="avatar"></a>
+    <a class="nav-title text-white d-lg-none" href="{{ .Site.BaseURL | relLangURL }}">
       {{ .Site.Title }}
     </a>
   </div>
@@ -10,7 +10,7 @@
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
       <li class="nav-item">
-        <a class="{{ if $currentPage.IsMenuCurrent "main" . }}active {{ end }}nav-link text-white" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+        <a class="{{ if $currentPage.IsMenuCurrent "main" . }}active {{ end }}nav-link text-white" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
       </li>
     {{ end }}
   </ul>
