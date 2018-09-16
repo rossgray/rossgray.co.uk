@@ -1,6 +1,6 @@
 <nav class="nav bg-primary">
   <div class="profile">
-    <a class="avatar d-lg-block" href="{{ .Site.BaseURL | relLangURL }}"><img src="{{ .Site.Params.avatarurl }}" alt="avatar"></a>
+    <a class="avatar d-lg-block" href="{{ .Site.BaseURL | relLangURL }}"><img src="{{ .Site.Params.avatarurl | relURL }}" alt="avatar"></a>
     <a class="nav-title text-white d-lg-none" href="{{ .Site.BaseURL | relLangURL }}">
       {{ .Site.Title }}
     </a>

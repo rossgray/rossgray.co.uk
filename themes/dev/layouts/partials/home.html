@@ -1,21 +1,18 @@
 <section class="about">
   <div>
-    {{ with .Site.Params.avatarurl }}
-      <div class="avatar d-lg-none"><img src="{{.}}" alt="avatar"></div>
-    {{ end }}
-  <h1>{{ .Site.Params.author }}</h1>
-  <h2>{{ .Site.Params.info }}</h2>
-  {{ with .Site.Params.social }}
-  <ul class="list-unstyled list-horizontal">
-    {{ range sort .}}
-      {{ if .icon }}
-        <li><a href="{{ .url }}"><i class="{{ .icon }}"></i></a></li>
-      {{ else }}
-        <li><a href="{{ .url }}">{{ .name }}</a></li>
+    <div class="avatar d-lg-none"><img src="{{ .Site.Params.avatarurl | relURL }}" alt="avatar"></div>
+    <h1>{{ .Site.Params.author }}</h1>
+    <h2>{{ .Site.Params.info }}</h2>
+    {{ with .Site.Params.social }}
+    <ul class="list-unstyled list-horizontal">
+      {{ range sort .}}
+        {{ if .icon }}
+          <li><a href="{{ .url }}"><i class="{{ .icon }}"></i></a></li>
+        {{ else }}
+          <li><a href="{{ .url }}">{{ .name }}</a></li>
+        {{ end }}
       {{ end }}
+    </ul>
     {{ end }}
-  </ul>
-  {{ end }}
-
   </div>
 </section>
