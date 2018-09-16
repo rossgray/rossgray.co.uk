@@ -1,4 +1,4 @@
-baseurl = "https://www.rgray.co.uk" # Hostname (and path) to the root.
+baseurl = "https://www.rossgray.co.uk" # Hostname (and path) to the root.
 title = "Ross Gray" # Site title.
 theme = "dev" # Set the theme.
 languagecode = "en" # The site’s language code used to generate RSS.

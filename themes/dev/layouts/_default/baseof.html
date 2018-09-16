@@ -21,11 +21,11 @@
     {{ if .Site.IsServer }}
       {{ $cssOpts := (dict "targetPath" "css/styles.css" "enableSourceMap" true ) }}
       {{ $styles := resources.Get "scss/styles.scss" | toCSS $cssOpts }}
-      <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+      <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
     {{ else }}
       {{ $cssOpts := (dict "targetPath" "css/styles.css" ) }}
       {{ $styles := resources.Get "scss/styles.scss" | toCSS $cssOpts | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+      <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
     {{ end }}
 
     {{ range .Site.Params.custom_css }}
@@ -54,10 +54,10 @@
 
     {{ if .Site.IsServer }}
       {{ $js := resources.Get "js/main.js" }}
-      <script src="{{ $js.Permalink }}"></script>
+      <script src="{{ $js.RelPermalink }}"></script>
     {{ else }}
       {{ $js := resources.Get "js/main.js" | minify }}
-      <script src="{{ $js.Permalink }}"></script>
+      <script src="{{ $js.RelPermalink }}"></script>
     {{ end }}
 
   </body>
