@@ -1,0 +1,14 @@
+company = "Ingresso"
+position = "Lead Software Engineer"
+dates = "Dec 2013 - Present"
+location = "London, UK"
+description = """
+- Initial role as fullstack web developer, promoted to engineering manager for front end and distribution team in July 2018. 
+- Managed projects with large clients such as Disney, Ticketmaster and Amazon.
+- Implemented large parts of ticketing website product, including writing of entire booking app by myself in AngularJS.
+- Built several microservices written in both Python (Django/Flask) and Go, running in Google Kubernetes Engine.
+- Lead developer on project to create high-performance ticketing system to sell tickets to events with extremely high demand, such as concerts by Ed Sheeran and Take That.
+- Implemented connections to various external ticketing system APIs.
+- Experience with Objective-C, MySQL, Git, Docker, JS frameworks (Vue & React), Redis.
+"""
+weight = 1

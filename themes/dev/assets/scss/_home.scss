@@ -1,0 +1,20 @@
+.about {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    .avatar {
+        img {
+            width: 10rem;
+            height: auto;
+            border-radius: 50%;
+            border: .1rem solid $black;
+        }
+    }
+    h1 {
+        margin-bottom: 0.5rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+    }
+}

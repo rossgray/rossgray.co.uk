@@ -1,0 +1,25 @@
+[[skill_type]]
+name = "Programming languages"
+desc = """
+- Extensive knowledge of Python, including web frameworks such as Django and Flask
+- JavaScript, including frameworks such as Vue, Angular and React
+- Some experience writing microservices in Go. Have also worked with Objective-C, C++
+"""
+
+[[skill_type]]
+name = "Databases"
+desc = """
+- MySQL & PostgreSQL
+"""
+
+[[skill_type]]
+name = "Infrastructure & tooling"
+desc = """
+- Familiar using Docker, Kubernetes, Google Cloud Platform
+"""
+
+[[skill_type]]
+name = "Languages"
+desc = """
+- French: intermediate level (both conversational and written)
+"""

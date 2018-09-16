@@ -1,0 +1,9 @@
+company = "Mercedes-Benz High Performance Engines"
+position = "Engineering Assistant"
+dates = "Sep 2004 - Apr 2005 & Sep 2006"
+location = "Northants, UK"
+description = """
+Designed fixtures using Catia V5 (3D CAD package).
+Analysed flow of components around workshop using simulation software.
+"""
+weight = 4

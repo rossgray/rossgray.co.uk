@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
+
+    <base href="{{ .Site.BaseURL }}">
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    {{ if .Site.IsServer }}
+      {{ $cssOpts := (dict "targetPath" "css/styles.css" "enableSourceMap" true ) }}
+      {{ $styles := resources.Get "scss/styles.scss" | toCSS $cssOpts }}
+      <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+    {{ else }}
+      {{ $cssOpts := (dict "targetPath" "css/styles.css" ) }}
+      {{ $styles := resources.Get "scss/styles.scss" | toCSS $cssOpts | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+    {{ end }}
+
+    {{ range .Site.Params.custom_css }}
+      <link rel="stylesheet" href="{{ . | absURL }}">
+    {{ end }}
+
+    <link rel="icon" type="image/png" href="{{ "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ "/images/favicon-16x16.png" | absURL }}" sizes="16x16">
+
+    {{ if .RSSLink }}
+      <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+      <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ end }}
+
+    {{ .Hugo.Generator }}
+  </head>
+
+  <body>
+    {{ partial "nav.html" . }}
+
+    <main class="content container">
+      {{ block "content" . }}{{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
+
+    {{ if .Site.IsServer }}
+      {{ $js := resources.Get "js/main.js" }}
+      <script src="{{ $js.Permalink }}"></script>
+    {{ else }}
+      {{ $js := resources.Get "js/main.js" | minify }}
+      <script src="{{ $js.Permalink }}"></script>
+    {{ end }}
+
+  </body>
+
+</html>
