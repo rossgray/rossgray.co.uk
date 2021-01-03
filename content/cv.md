@@ -1,6 +1,6 @@
 ---
 title: "CV/Resumé"
-date: 2018-09-06T20:47:30+01:00
+date: 2021-01-03T11:28:21Z
 menu: "main"
 layout: "cv"
 ---

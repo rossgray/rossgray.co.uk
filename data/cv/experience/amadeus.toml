@@ -9,4 +9,4 @@ description = """
 - Developed mainly in C++, but also used Python, SQL (Oracle), Bash and XML/XSLT.
 - Completed trainings on Advanced C++ and design patterns.
 """
-weight = 3
+weight = 4

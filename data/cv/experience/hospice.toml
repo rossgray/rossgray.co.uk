@@ -4,4 +4,4 @@ dates = "2015 - Present"
 description = """
 - Developed a silent auction bidding app using Vue.js, saving the charity over £2000/year by not needing to purchase a commercial solution
 """
-weight = 2
+weight = 3

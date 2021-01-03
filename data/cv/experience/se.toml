@@ -1,0 +1,11 @@
+company = "Secret Escapes"
+position = "Data Engineering Technical Lead"
+dates = "Dec 2018 - Present"
+location = "Bristol, UK"
+description = """
+- Responsible for designing and building data infrastructure to support the business
+- Built data pipeline to extract data from hundreds of different data sources, transform, validate, and surface this data in a usable format in our data warehouse
+- Technologies used include Apache Airflow for workflow management, Snowflake as our data warehouse, AWS for infrastructure, Tableau for dashboards
+- Built extensive test suite to ensure robustness of data pipeline
+"""
+weight = 1
