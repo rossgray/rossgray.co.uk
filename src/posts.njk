@@ -1,0 +1,16 @@
+---
+layout: base
+title: Posts
+eleventyImport:
+  collections: ["post"]
+---
+
+<h1>{{title}}</h1>
+<ul id="posts-list" class="mt-6 md:mt-10">
+{% for post in collections.post | reverse %}
+<li>
+    <a href="{{ post.url }}" class="block text-lg md:text-xl font-medium">{{ post.data.title }}</a>
+    <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+</li>
+{% endfor %}
+</ul>
