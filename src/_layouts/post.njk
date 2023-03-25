@@ -2,8 +2,8 @@
 layout: base
 ---
 
-<h1 class="mb-1">{{ title }}</h1>
-<article class="mx-auto prose lg:prose-lg prose-h1:mb-1 mt-10">
+<article class="mx-auto mt-10">
+    <h1 class="mb-1">{{ title }}</h1>
     <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
-    {{content | safe}}
+    {% include "partials/_prose.njk" %}
 </article>
