@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/css/prism.css");
   eleventyConfig.addPassthroughCopy("src/assets/img/*");
 
+  // filters
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     const options = {
       year: "numeric",
@@ -18,6 +19,13 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return dateObj.toISOString();
+  });
+
+  // tags we typically don't want to display
+  eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
+    return (tags || []).filter(
+      (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
+    );
   });
 
   return {

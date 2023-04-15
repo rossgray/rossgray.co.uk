@@ -3,4 +3,6 @@ layout: base
 ---
 
 {% include "partials/_profile.njk" %}
-{% include "partials/_prose.njk" %}
+<div class="mt-10 mx-auto prose lg:prose-lg">
+    {{content | safe}}
+</div>

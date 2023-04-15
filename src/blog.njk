@@ -5,12 +5,19 @@ eleventyImport:
   collections: ["post"]
 ---
 
-<h1>{{title}}</h1>
-<ul id="posts-list" class="mt-6 md:mt-10">
-{% for post in collections.post | reverse %}
-<li>
-    <a href="{{ post.url }}" class="block text-lg md:text-xl font-medium">{{ post.data.title }}</a>
-    <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-</li>
-{% endfor %}
-</ul>
+<div class="max-w-screen-md mx-auto md:mt-4">
+  <h1>{{title}}</h1>
+  <ul id="posts-list" class="mt-6 md:mt-10">
+  {% for post in collections.post | reverse %}
+  <li class="mt-6">
+      <a href="{{ post.url }}" class="block text-lg md:text-xl font-medium">{{ post.data.title }}</a>
+      <time class="text-gray-500 text-sm mb-1" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      <ul class="flex flex-row">
+        {% for tag in post.data.tags | filterTagList %}
+        <li class="lowercase text-gray-500 text-sm mr-2"><code>#{{tag}}</code></li>
+        {% endfor %}
+      </ul>
+  </li>
+  {% endfor %}
+  </ul>
+</div>
