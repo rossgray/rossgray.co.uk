@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"npm:dev:*\"",
-    "build": "npm run build:css && npm run build:11ty",
+    "build": "npm run clean && npm run build:css && npm run build:11ty",
     "dev:11ty": "eleventy --serve",
     "dev:css": "tailwindcss -i src/assets/css/main.css -o _site/assets/css/main.css --watch --postcss",
     "build:11ty": "eleventy",
-    "build:css": "tailwindcss -i src/assets/css/main.css -o _site/assets/css/main.css --postcss"
+    "build:css": "tailwindcss -i src/assets/css/main.css -o _site/assets/css/main.css --postcss",
+    "clean": "rm -rf _site"
   },
   "repository": {
     "type": "git",
