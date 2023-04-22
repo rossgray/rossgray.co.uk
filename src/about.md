@@ -11,4 +11,4 @@ From building high-performance ticketing systems to scalable data infrastructure
 
 I am currently working for [Mystic AI](https://www.mystic.ai/) as a Senior Software Engineer, where I am helping to make machine learning more accessible by building easy-to-use tools and infrastructure.
 
-Thank you for taking the time to visit my website. If you have any questions or would like to learn more about my work, please don't hesitate to [get in touch](mailto:{{site.email}})!
+Thank you for taking the time to visit my website. If you have any questions or would like to learn more about my work, please don't hesitate to <a id="contact-email" href="#">get in touch!</a>

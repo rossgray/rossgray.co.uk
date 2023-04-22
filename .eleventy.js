@@ -21,6 +21,11 @@ module.exports = function (eleventyConfig) {
     return dateObj.toISOString();
   });
 
+  eleventyConfig.addFilter("b64Encode", (string) => {
+    let buf = Buffer.from(string);
+    return buf.toString("base64");
+  });
+
   // tags we typically don't want to display
   eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
     return (tags || []).filter(
