@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{title}} - {{site.title}}</title>
+  <meta name="description" content="{{site.description}}">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" type="image/png" href="{{ '/assets/img/favicon-32x32.png' | url }}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ '/assets/img/favicon-16x16.png' | url }}" sizes="16x16">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/favicon-32x32.png' | url }}">
+
+  <link rel="stylesheet" href="{{ '/assets/css/prism.css' | url }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
+</head>
+
+<body class="flex flex-col min-h-screen">
+    {% include "partials/_header.njk" %}
+    <main class="flex-grow container py-6">
+        {{content | safe}}
+    </main>
+    {% include "partials/_footer.njk" %}
+</body>
+
+<script>
+  // obfuscate email
+  // (see: https://css-tricks.com/how-to-safely-share-your-email-address-on-a-website/)
+  var encEmail = "{{site.email | b64Encode}}";
+  const contact = document.getElementById("contact-email");
+  contact.setAttribute("href", "mailto:".concat(atob(encEmail)));
+</script>
+
+</html>

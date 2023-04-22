@@ -1,0 +1,18 @@
+---
+layout: base
+---
+
+<article class="mx-auto prose lg:prose-lg lg:mt-10">
+    <h1 class="mb-1">{{ title }}</h1>
+    <time class="text-gray-500" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+    <div class="not-prose">
+        <ul class="flex flex-row">
+        {% for tag in tags | filterTagList %}
+        <li class="lowercase text-gray-500 text-sm mr-2"><code>#{{tag}}</code></li>
+        {% endfor %}
+        </ul>
+    </div>
+    <div class="mt-10">
+        {{content | safe}}
+    </div>
+</article>

@@ -1,0 +1,22 @@
+@tailwind base;
+
+@layer base {
+  h1 {
+    @apply text-3xl;
+    @apply lg:text-5xl;
+    @apply font-extrabold;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  a {
+    @apply text-blue-600 hover:underline decoration-[3px] underline-offset-[5px];
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+ 

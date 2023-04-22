@@ -1,0 +1,34 @@
+{
+  "name": "rossgray.co.uk",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm:dev:*\"",
+    "build": "npm run clean && npm run build:css && npm run build:11ty",
+    "dev:11ty": "eleventy --serve",
+    "dev:css": "tailwindcss -i src/assets/css/main.css -o _site/assets/css/main.css --watch --postcss",
+    "build:11ty": "eleventy",
+    "build:css": "tailwindcss -i src/assets/css/main.css -o _site/assets/css/main.css --postcss",
+    "clean": "rm -rf _site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rossgray/rossgray.co.uk.git"
+  },
+  "author": "Ross Gray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rossgray/rossgray.co.uk/issues"
+  },
+  "homepage": "https://github.com/rossgray/rossgray.co.uk#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.13",
+    "concurrently": "^7.6.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4"
+  }
+}

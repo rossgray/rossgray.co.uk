@@ -1,8 +1,0 @@
-company = "Thales Optronics"
-position = "Student Systems Engineer"
-dates = "Jul 2008 - Sep 2008"
-location = "Staines, UK"
-description = """
-- Designed and evaluated numerous techniques in MATLAB for improving the imagery of aerially mounted thermal imaging cameras.
-"""
-weight = 2
