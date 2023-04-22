@@ -28,14 +28,15 @@
         {{content | safe}}
     </main>
     {% include "partials/_footer.njk" %}
-</body>
 
-<script>
-  // obfuscate email
-  // (see: https://css-tricks.com/how-to-safely-share-your-email-address-on-a-website/)
-  var encEmail = "{{site.email | b64Encode}}";
-  const contact = document.getElementById("contact-email");
-  contact.setAttribute("href", "mailto:".concat(atob(encEmail)));
-</script>
+  <script>
+    // obfuscate email
+    // (see: https://css-tricks.com/how-to-safely-share-your-email-address-on-a-website/)
+    var encEmail = "{{site.email | b64Encode}}";
+    const contact = document.getElementById("contact-email");
+    contact.setAttribute("href", "mailto:".concat(atob(encEmail)));
+  </script>
+
+</body>
 
 </html>
