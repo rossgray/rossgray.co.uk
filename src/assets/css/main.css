@@ -26,5 +26,13 @@
 /* Override prism theme */
 code[class*="language-"],
 pre[class*="language-"] {
-  font-size: 1rem;
+  font-size: 0.875em;
+}
+
+@media (min-width: 1024px) {
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    font-size: 1rem;
+  }
 }
