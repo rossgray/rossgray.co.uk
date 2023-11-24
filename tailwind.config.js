@@ -8,7 +8,7 @@ const em = (px, base) => `${round(px / base)}em`;
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{njk,md,html,js}"],
+  content: ["./src/**/*.{njk,md,html,js}", ".eleventy.js"],
   theme: {
     // Apply default styles to container (centre and add padding)
     container: {
