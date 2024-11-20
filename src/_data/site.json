@@ -2,5 +2,19 @@
   "title": "Ross Gray",
   "url": "https://www.rossgray.co.uk",
   "description": "Software Engineer based in Bath, UK",
-  "email": "contact@rossgray.co.uk"
+  "email": "contact@rossgray.co.uk",
+  "navigation": [
+    {
+      "title": "Blog",
+      "url": "/blog/"
+    },
+    {
+      "title": "Projects",
+      "url": "/projects/"
+    },
+    {
+      "title": "About",
+      "url": "/about/"
+    }
+  ]
 }
